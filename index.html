@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <!-- font link -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Onest:wght@100..900&display=swap"
+    rel="stylesheet">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="src/css/main.css">
+</head>
+
+<body class="min-w-[1920px] max-w-[5000px] mx-auto overflow-hidden">
+
+  <div class="2xl:overflow-hidden">
+
+    <!-- header -->
+    <header class="header bg-white py-2.5">
+      <div class="px-30px">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-[23px]">
+            <a class="flex items-center gap-6" href="#!">
+              <img src="./src/images/logo/company-logo.svg" alt="company-logo">
+            </a>
+            <div class="flex gap-[46px]">
+              <a class="text-3.5 leading-3.5 font-medium text-dark-navy" href="#!">
+                моё <br> обучение
+              </a>
+              <h3 class="text-[35px] leading-10 font-bold text-bright-blue">Профиль</h3>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="w-50px cursor-pointer lg:text-xl flex items-center justify-center rounded-full h-50px bg-sky-blue text-white font-Manrope font-extrabold avatar-box">
+              <span>А</span>
+            </div>
+            <div
+              class="avatar-option hidden absolute top-0 right-0 bg-white pb-[33px] rounded-[15px] shadow-avatar-shadow z-[100] pt-6 pl-[17px] pr-5 w-[337px]">
+              <div class="flex gap-[25px] items-center">
+                <div
+                  class="w-50px cursor-pointer lg:text-xl flex items-center justify-center rounded-full h-50px bg-[#004BD4] text-white font-Manrope font-extrabold">
+                  <span>А</span>
+                </div>
+                <div class="font-Inter">
+                  <span class="text-base block leading-[19px] text-steel-blue">Васисуалий К.</span>
+                  <span class="text-[13px] block mt-[2px] leading-[15px] text-[#0F84FE]">Обучающийся</span>
+                </div>
+              </div>
+              <div class="space-y-2 mt-5 font-Inter">
+                <a href="index.html"
+                  class="flex items-center gap-[17px] h-50px duration-200 hover:bg-[#ECECEC] pl-[23px] rounded-[5px] cursor-pointer">
+                  <div class="w-8 h-8 flex items-center justify-center">
+                    <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.29102 25.4378V6.04195C1.29102 4.40847 1.29102 3.59111 1.60891 2.9672C1.88854 2.4184 2.33441 1.97253 2.88322 1.6929C3.50713 1.375 4.32448 1.375 5.95797 1.375H19.3746C20.1914 1.375 20.6003 1.375 20.9123 1.53395C21.1867 1.67376 21.4084 1.8967 21.5482 2.1711C21.7071 2.48306 21.7077 2.89173 21.7077 3.70848V20.9168C21.7077 21.7336 21.7071 22.1414 21.5482 22.4533C21.4084 22.7277 21.187 22.9514 20.9126 23.0912C20.6009 23.25 20.1925 23.25 19.3773 23.25H4.57227C2.76008 23.25 1.29102 24.7191 1.29102 26.5313C1.29102 27.1353 1.7807 27.625 2.38477 27.625H17.919C18.7341 27.625 19.1426 27.625 19.4542 27.4662C19.7286 27.3264 19.95 27.1029 20.0898 26.8285C20.2488 26.5165 20.2493 26.1084 20.2493 25.2917V23.25"
+                        stroke="#2F3244" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                  </div>
+                  <span class="text-base leading-[19px] text-steel-blue">Администрирование LMS</span>
+                </a>
+                <a href="#!"
+                  class="flex items-center gap-[17px] h-50px duration-200 hover:bg-[#ECECEC] pl-[23px] rounded-[5px] cursor-pointer">
+                  <div class="w-8 h-8 flex items-center justify-center">
+                    <img src="./src/images/icons/bell.svg" alt="" width="21" height="24">
+                  </div>
+                  <div class="flex gap-[6px]">
+                    <span class="text-base leading-[19px] text-steel-blue">Уведомления</span>
+                    <span
+                      class="rounded-full text-[10px] leading-[14px] font-Manrope text-white font-extrabold bg-[#FF7043] min-w-[18px] h-[18px] text-center py-[2px] px-[3px]">14</span>
+                  </div>
+                </a>
+                <a href="profil.html"
+                  class="flex items-center gap-[17px] h-50px duration-200 hover:bg-[#ECECEC] pl-[23px] rounded-[5px] cursor-pointer">
+                  <div class="w-8 h-8 flex items-center justify-center">
+                    <svg width="33" height="31" viewBox="0 0 33 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M28.6765 11.0114L28.1424 10.7143C28.0595 10.6681 28.0187 10.645 27.9787 10.621C27.5804 10.3824 27.2447 10.0528 26.9998 9.65849C26.9751 9.61881 26.9519 9.5772 26.9044 9.49496C26.857 9.41283 26.8329 9.3712 26.8109 9.33C26.5911 8.91974 26.4723 8.46254 26.4652 7.9972C26.4645 7.95042 26.4646 7.90262 26.4662 7.80759L26.4767 7.18742C26.4934 6.19498 26.5017 5.69723 26.3623 5.25051C26.2384 4.85373 26.0311 4.48825 25.7544 4.1781C25.4415 3.82752 25.0085 3.5774 24.1415 3.07781L23.4214 2.66283C22.5568 2.16462 22.1244 1.91544 21.6654 1.82044C21.2593 1.7364 20.8403 1.74029 20.4357 1.83112C19.979 1.93364 19.552 2.18932 18.6985 2.70039L18.6936 2.7027L18.1776 3.01167C18.0961 3.06052 18.0548 3.08515 18.0139 3.10788C17.608 3.33351 17.155 3.45827 16.6909 3.47317C16.6441 3.47467 16.5966 3.47467 16.5014 3.47467C16.4069 3.47467 16.3572 3.47467 16.3106 3.47317C15.8455 3.45821 15.3915 3.33277 14.985 3.10621C14.9441 3.08337 14.9036 3.05855 14.8218 3.00947L14.3025 2.69772C13.4432 2.18181 13.0128 1.92347 12.5537 1.82044C12.1474 1.72929 11.7269 1.72677 11.3194 1.8119C10.8592 1.90801 10.4267 2.15905 9.56161 2.66112L9.55776 2.66283L8.84659 3.07558L8.83872 3.0804C7.98145 3.57795 7.55178 3.82732 7.24157 4.17648C6.96629 4.48632 6.76054 4.85121 6.63738 5.24695C6.49818 5.69427 6.50559 6.1931 6.52237 7.19021L6.53279 7.80951C6.53437 7.90329 6.53711 7.94989 6.53642 7.99601C6.52952 8.46231 6.4091 8.92044 6.18872 9.33143C6.16693 9.37207 6.14345 9.41272 6.09655 9.49391C6.04962 9.57515 6.02689 9.61555 6.00256 9.65476C5.7565 10.0512 5.4193 10.3827 5.01854 10.6217C4.9789 10.6453 4.93712 10.6681 4.85503 10.7136L4.32775 11.0058C3.45047 11.4919 3.01193 11.7352 2.69282 12.0815C2.41053 12.3877 2.19728 12.7511 2.0671 13.1467C1.91995 13.594 1.92008 14.0955 1.92236 15.0985L1.92422 15.9183C1.92648 16.9146 1.92958 17.4124 2.07706 17.8566C2.20753 18.2497 2.41923 18.6108 2.69994 18.9153C3.01724 19.2594 3.45142 19.5012 4.32205 19.9855L4.84463 20.2762C4.93357 20.3257 4.97832 20.3501 5.02121 20.376C5.41834 20.6151 5.7529 20.9457 5.99686 21.3399C6.02321 21.3825 6.04852 21.4267 6.09911 21.5151C6.14908 21.6024 6.17464 21.646 6.19775 21.6898C6.41165 22.0947 6.52617 22.5447 6.53398 23.0026C6.53482 23.0521 6.5341 23.1021 6.5324 23.2027L6.52237 23.797C6.50548 24.7975 6.49812 25.2984 6.63815 25.7469C6.76202 26.1437 6.96907 26.5091 7.24584 26.8193C7.55869 27.1699 7.9924 27.4199 8.85941 27.9195L9.5794 28.3344C10.444 28.8326 10.8761 29.0815 11.3351 29.1765C11.7412 29.2605 12.1605 29.2572 12.5651 29.1664C13.0224 29.0638 13.4508 28.8072 14.3068 28.2947L14.8228 27.9857C14.9044 27.9368 14.9458 27.9123 14.9867 27.8896C15.3925 27.6639 15.8451 27.5385 16.3092 27.5236C16.3559 27.5221 16.4035 27.5221 16.4986 27.5221C16.594 27.5221 16.6415 27.5221 16.6884 27.5236C17.1535 27.5386 17.6088 27.6644 18.0153 27.891C18.0511 27.9109 18.0869 27.9325 18.1498 27.9703L18.6983 28.2996C19.5578 28.8156 19.9872 29.0731 20.4464 29.1762C20.8527 29.2673 21.2735 29.271 21.6811 29.1859C22.1411 29.0898 22.5745 28.8383 23.4391 28.3365L24.161 27.9175C25.0188 27.4197 25.4489 27.17 25.7592 26.8207C26.0345 26.5109 26.2405 26.1462 26.3637 25.7504C26.5019 25.3064 26.4935 24.8114 26.477 23.8287L26.4662 23.1877C26.4646 23.0939 26.4645 23.0473 26.4651 23.0012C26.472 22.5349 26.5905 22.0764 26.8109 21.6654C26.8326 21.6249 26.8563 21.5839 26.903 21.503C26.95 21.4217 26.9742 21.3812 26.9986 21.342C27.2446 20.9456 27.5822 20.6138 27.9829 20.3748C28.0221 20.3514 28.0624 20.3291 28.1425 20.2847L28.1453 20.2834L28.6726 19.9912C29.5499 19.5051 29.9892 19.2615 30.3084 18.9153C30.5906 18.609 30.8036 18.2462 30.9338 17.8505C31.0801 17.4059 31.0789 16.9072 31.0767 15.916L31.0748 15.0786C31.0725 14.0823 31.0713 13.5846 30.9238 13.1403C30.7933 12.7473 30.5805 12.3861 30.2998 12.0817C29.9828 11.7379 29.548 11.496 28.679 11.0126L28.6765 11.0114Z"
+                        stroke="#2F3244" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      <path
+                        d="M10.6667 15.4987C10.6667 18.7204 13.2783 21.3321 16.5 21.3321C19.7217 21.3321 22.3333 18.7204 22.3333 15.4987C22.3333 12.2771 19.7217 9.66539 16.5 9.66539C13.2783 9.66539 10.6667 12.2771 10.6667 15.4987Z"
+                        stroke="#2F3244" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <span class="text-base leading-[19px] text-steel-blue">Профиль</span>
+                </a>
+                <a href="#!"
+                  class="flex items-center gap-[17px] h-50px duration-200 hover:bg-[#ECECEC] pl-[23px] rounded-[5px] cursor-pointer">
+                  <div class="w-8 h-8 flex items-center justify-center">
+                    <svg width="21" height="21" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.0026 16.4987L16.0026 12.4987M16.0026 12.4987L12.0026 8.4987M16.0026 12.4987H1.33594M1.33594 6.16273V6.09896C1.33594 4.60549 1.33594 3.85819 1.62659 3.28776C1.88225 2.78599 2.2899 2.37834 2.79167 2.12268C3.3621 1.83203 4.10939 1.83203 5.60286 1.83203H18.4029C19.8963 1.83203 20.642 1.83203 21.2125 2.12268C21.7142 2.37834 22.1232 2.78599 22.3789 3.28776C22.6693 3.85763 22.6693 4.60402 22.6693 6.09458V18.9035C22.6693 20.394 22.6693 21.1393 22.3789 21.7092C22.1232 22.211 21.7142 22.6193 21.2125 22.875C20.6426 23.1654 19.8973 23.1654 18.4067 23.1654H5.59848C4.10793 23.1654 3.36154 23.1654 2.79167 22.875C2.2899 22.6193 1.88225 22.2106 1.62659 21.7088C1.33594 21.1384 1.33594 20.3922 1.33594 18.8987V18.832"
+                        stroke="#2F3244" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <span class="text-base leading-[19px] text-steel-blue">Выйти</span>
+                </a>
+              </div>
+              <div class="my-5 w-full bg-[#ABABAB] h-[1px]"></div>
+              <div class="space-y-[23px]">
+                <div class="flex gap-[25px] items-center">
+                  <div
+                    class="w-50px cursor-pointer lg:text-xl flex items-center justify-center rounded-full h-50px bg-[#FF44CB] text-white font-Manrope font-extrabold">
+                    <span>П</span>
+                  </div>
+                  <div class="font-Inter">
+                    <span class="text-base block leading-[19px] text-steel-blue">Ебардей Г.</span>
+                    <span class="text-[13px] block mt-[2px] leading-[15px] text-[#0F84FE]">Преподаватель</span>
+                  </div>
+                </div>
+                <div class="flex gap-[25px] items-center">
+                  <div
+                    class="w-50px cursor-pointer lg:text-xl flex items-center justify-center rounded-full h-50px bg-[#FFC34E] text-white font-Manrope font-extrabold">
+                    <span>Р</span>
+                  </div>
+                  <div class="font-Inter">
+                    <span class="text-base block leading-[19px] text-steel-blue">Васисуалий К.</span>
+                    <span class="text-[13px] block mt-[2px] leading-[15px] text-[#0F84FE]">Руководитель ОП</span>
+                  </div>
+                </div>
+                <div class="flex gap-[25px] items-center">
+                  <div
+                    class="w-50px cursor-pointer lg:text-xl flex items-center justify-center rounded-full h-50px bg-[#004BD4] text-white font-Manrope font-extrabold">
+                    <span>А</span>
+                  </div>
+                  <div class="font-Inter">
+                    <span class="text-base block leading-[19px] text-steel-blue">Акакий У.</span>
+                    <span class="text-[13px] block mt-[2px] leading-[15px] text-[#0F84FE]">Администратор</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <div class="flex items-start h-screen relative">
+
+      <!-- left side -->
+      <aside class="bg-blue-12 min-w-[108px] w-[310px] pt-5 pl-[14px] pb-5 pr-[19px] h-full overflow-y-auto">
+        <nav>
+          <ul class="whitespace-nowrap">
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/dashboard.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Дашборд</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="courses.html">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/education.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Курсы</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="groups.html">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/user.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Группы</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/comunication.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Заявки</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="test.html">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/edit.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Тесты</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/users.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Пользователи</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/book.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Справочники</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <svg width="23" height="26" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.0039 15V16C12.0039 17.6569 10.6608 19 9.00391 19C7.34705 19 6.00391 17.6569 6.00391 16V15M12.0039 15H6.00391M12.0039 15H15.5944C15.9769 15 16.1691 15 16.324 14.9478C16.6199 14.848 16.8514 14.6156 16.9512 14.3198C17.0036 14.1643 17.0036 13.9715 17.0036 13.5859C17.0036 13.4172 17.0034 13.3329 16.9902 13.2524C16.9653 13.1004 16.9063 12.9563 16.8165 12.8312C16.769 12.7651 16.7087 12.7048 16.5897 12.5858L16.2002 12.1963C16.0745 12.0706 16.0039 11.9001 16.0039 11.7224V8C16.0039 4.134 12.8699 0.999991 9.00391 1C5.13792 1.00001 2.00391 4.13401 2.00391 8V11.7224C2.00391 11.9002 1.93315 12.0706 1.80747 12.1963L1.41797 12.5858C1.29866 12.7051 1.23895 12.765 1.19141 12.8312C1.10156 12.9564 1.04205 13.1004 1.01711 13.2524C1.00391 13.3329 1.00391 13.4172 1.00391 13.586C1.00391 13.9715 1.00391 14.1642 1.05636 14.3197C1.15616 14.6156 1.3887 14.848 1.68457 14.9478C1.83947 15 2.03092 15 2.41346 15H6.00391"
+                      stroke="#fff" stroke-width="1.81071" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="relative flex items-center space-x-[7px]">
+                  <span class="text-lg leading-5 font-medium font-Inter text-white">Уведомления</span>
+                  <div
+                    class="text-[10px] text-white h-[18px] text-center min-w-[18px] font-extrabold font-Manrope bg-sunset-orange p-[2px] rounded-full w-fit">
+                    14</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/calendar.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Отчеты</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/user-check.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Соглашения</span>
+              </a>
+            </li>
+            <li>
+              <a class="felx items-center gap-3 px-5 py-3 bg- rounded-[22px] hover:bg-[#007BFB] duration-200 h-[60px] flex justify-start"
+                href="#!">
+                <div class="min-w-30px min-h-30px max-w-30px max-h-30px flex items-center justify-center">
+                  <img src="src/images/icons/settings.svg" alt="">
+                </div>
+                <span class="text-lg leading-5 font-medium font-Inter text-white">Настройки системы</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- left side -->
+
+      <main class="w-[calc(100%_-_310px)] px-10 h-full overflow-y-auto">
+
+        <section class="pt-10 max-[1528px]">
+          <div class="flex items-center justify-between">
+            <h1 class="text-steel-blue font-medium text-[24px] leading-[28px]">Учётные данные</h1>
+            <a href="edit-profil.html" class="btn">Редактировать профиль</a>
+          </div>
+
+          <div class="bg-white pt-[42px] pb-[73px] flex items-center gap-[80px] mt-30px rounded-15px px-[56px]">
+            <img class="w-[276px] h-[276px] rounded-full" src="src/images/user.png" alt="user img">
+            <div class="text-steel-blue">
+              <h2 class="text-[37px] leading-[43px] font-normal">Константинопольский <br>
+                Константин</h2>
+              <div class="flex items-center gap-3 mt-[25px] pb-[36px]">
+                <img src="src/images/icons/location.svg" alt="">
+                <span class="text-[19px] leading-[28px]">Франция, г.
+                  Гваделупа, 45 лет</span>
+              </div>
+              <h3 class="text-[24px] leading-[28px] font-normal">Контактные данные</h3>
+              <div class="flex mt-[22px] gap-1">
+                <span class="font-bold text-[19px] leading-[28px]">Телефон:</span>
+                <a href="tel:+79376442233" class="text-[19px] leading-[28px] text-steel-blue">+7 (937) 644-22-33</a>
+              </div>
+              <div class="flex gap-1">
+                <span class="font-bold text-[19px] leading-[28px]">Электропочта:</span>
+                <a href="tel:+79376442233" class="text-[19px] leading-[28px] text-steel-blue">bnsv@ya.ru</a>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+
+  <!-- js -->
+  <script src="./src/js/main.js"></script>
+</body>
+
+</html>
